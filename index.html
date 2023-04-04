@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0nline Shopping Site in India</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+<style>
+   header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr 1fr 1fr 1fr 1fr ;
+    background-color: black;
+    height: 80px;
+    position: sticky;
+    top: 0PX;
+   }
+   .logo{
+    height: 75px;
+    margin-right: 2px;
+    width: 180px;
+    padding: 5px;
+    margin-right: 4px;
+   
+    
+   }
+   .logo :hover{
+    border: 1px solid white;
+   }
+   .addess{
+    color: white;
+    height: 60px;
+    margin-right: 10px;
+    width: 180px;
+    padding: 10px;
+    margin-top: 7px;
+   
+   }
+   .addess:hover{
+    border: 1px solid white;
+   }
+   #header_input{
+    height: 60px;
+    width:103% ;
+    margin-top: 5px;
+    margin-right: 25px;
+   flex-wrap: nowrap;
+   }
+   .flag{
+   
+    margin-top: 5px;
+    width:90px;
+    height: 60px;
+    text-align: center;
+    margin-left:30px;
+    margin-right: 5px;
+   }
+   .flag:hover{
+    border: 1px solid white;
+   }
+   .account{
+     width: 145px;
+     height: 60px;
+     color: white;
+     margin-top: 5px;
+     margin-left: 20px;
+     text-align: center;
+     margin-right: 3px;
+     background-color: black;
+   }
+   .account:hover{
+    border: 1px solid white;
+  
+
+   }
+   .orders{
+     width: 90px;
+     height: 60px;
+     margin-top: 5px;
+     margin-left: 16px;
+     text-align: center;
+     background-color: black;
+   
+   }
+   .orders:hover{
+    border: 1px solid white;
+   }
+   .cart{
+     width: 90px;
+     height: 60px;
+     margin-top: 5px;
+     margin-left: 8px;
+   }
+   .cart:hover{
+    border: 1px solid white;
+   }
+   .section_1{
+        display: grid;
+        grid-template-columns: 9fr 3fr;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(23, 20, 54);
+        border: 1px solid black;
+
+   }
+   .section_1_div_1{
+            height: 49px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+   }
+   .section_1_div_1 div:hover{
+            border: 1px solid white;
+   }
+    .section_1_div_2{
+            height: 49px;
+            text-align: center;
+   }
+   .section_1_div_2:hover{
+         border: 1px solid white;
+   }
+   
+   .section_2{
+      display: grid;
+      grid-template-columns: 3fr 3fr 3fr 3fr;
+      padding: 10px;
+      margin-top: -240px;
+      position: absolute;
+      margin-bottom: 50px;
+     
+}
+   .section_2_div_1{
+     border: 2px solid black;
+     height: 390px;
+     margin: 10px;
+     padding: 10px;
+     background-color: white;
+   }
+   .section_2_div_2{
+    border: 2px solid black;
+     height: 390px;
+     margin: 10px;
+     padding: 10px;
+     background-color: white;
+   }
+   .section_2_div_3{
+    border: 2px solid black;
+     height: 390px;
+     margin: 10px;
+     padding: 10px;
+     background-color: white;
+   }
+   .section_2_div_4{
+    border: 2px solid black;
+     height: 390px;
+     margin: 10px;
+     padding: 10px;
+     background-color: white;
+   }
+   .section_3{
+      display: grid;
+      grid-template-columns: 3fr 3fr 3fr 3fr;
+      padding: 10px;
+      background-color: rgb(222, 215, 215);
+   }
+   .section_3_div_1{
+    border: 2px solid black;
+     height: 390px;
+     margin: 15px;
+     padding: 10px;
+     background-color: white;
+     margin-top: 10px;
+   }
+   .upgrad{
+     display: grid;
+     grid-template-columns: 6fr 6fr;
+   }
+   .upgrad_div_1{
+        margin: 5px;
+        height: 80px;
+        border: 1px solid black;
+   }
+   .upgrad_div_2{
+        margin: 5px;
+        height: 80px;
+        border: 1px solid black;
+   }
+   .section_3_div_2{
+    border: 2px solid black;
+     height: 390px;
+     margin: 10px;
+     padding: 10px;
+     background-color: white;
+   }
+   .section_3_div_3{
+    border: 2px solid black;
+     height: 390px;
+     margin: 10px;
+     padding: 10px;
+     background-color: white;
+   }
+   .section_3_div_4{
+    border: 2px solid black;
+     height: 390px;
+     margin: 10px;
+     padding: 10px;
+     background-color: white;
+   }
+   .section_4{
+     display: grid;
+     grid-template-columns:  3fr 3fr 3fr 3fr;
+     padding: 10px;
+     background-color: rgb(222, 215, 215);
+   }
+   .section_4_div_1{
+    border: 2px solid black;
+     height: 390px;
+     margin: 15px;
+     padding: 10px;
+     background-color: white;
+     margin-top: 10px;
+   }
+   .section_4_div_2{
+    border: 2px solid black;
+     height: 390px;
+     margin: 10px;
+     padding: 10px;
+     background-color: white;
+   }
+   .section_4_div_3{
+    border: 2px solid black;
+     height: 390px;
+     margin: 10px;
+     padding: 10px;
+     background-color: white;
+   }
+   .section_4_div_4{
+    border: 2px solid black;
+     height: 390px;
+     margin: 10px;
+     padding: 10px;
+     background-color: white;
+   }
+   .section_5{
+      width: 100%;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+   }
+   .section_6{
+    width: 100%;
+    height: 200px;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+   }
+   .section_6_div_2{
+     width: 50%;
+     height: 150px;
+     padding: 10px;
+    
+   }
+   .section_7{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(61, 61, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .section_7_div_1{
+        width: 150px;
+        height: 40px;
+        text-align: center;
+   }
+   #back_to_top:visited{
+    color: white;
+    
+   }
+   .section_8{
+     width: 100%;
+     height: 350px;
+     background-color: rgb(32, 32, 61);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-bottom: 1px solid gray;
+     
+   }
+   .section_8_div{
+     width: 70%;
+     height: 300px;
+     display: grid;
+     grid-template-columns: 3fr 3fr 3fr 3fr;
+   }
+   .section_8_div_1{
+     text-align: center;
+     color:aliceblue;
+   }
+   .section_8_div_2{
+    text-align: center;
+    color:aliceblue;
+   }
+   .section_8_div_3{
+    text-align: center;
+    color:aliceblue;
+   }
+   .section_8_div_4{
+    text-align: center;
+    color:aliceblue;
+   }
+   .title{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 20px;
+   }
+   .title~div{
+    margin-bottom: 5px;
+   }
+   .section_9{
+     width: 100%;
+     height: 200px;
+     background-color: rgb(32, 32, 61);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .section_9_div{
+     width: 90%;
+     height: 150px;
+     display: flex;
+     flex-direction: column;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+   .section_9_div_1{
+     width: 50%;
+     height: 40px;
+     margin: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .section_9_div_2{
+    width: 85%;
+     height: 55px;
+     margin: 10px;
+     display: flex;
+     justify-content: space-evenly;
+     
+   }
+   footer{
+     width: 100%;
+     height: 200px;
+     background-color: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+   }
+   .footer_div{
+    width: 70%;
+    height: 230px;
+    display: grid;
+    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+   
+   }
+   .footer_div_1{
+    padding: 10px;
+   }
+   .footer_div_2{
+   
+ padding: 10px;
+   }
+   .footer_div_3{
+   padding: 10px;
+   }
+   .footer_div_4{
+   padding: 10px;
+   }
+   .footer_div_5{
+  padding: 10px;
+   }
+   .footer_last{
+
+    width: 100%;
+    height: 80px;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .footer_last_sub{
+    width: 35%;
+    height: 60px; 
+     text-align: center;
+   }
+</style>
+</head>
+<body class="container-fluid">
+      
+       <header>
+                <div class="logo">
+                    <img src="./amazon_photo/amazon_LOGO.png" width="96%">
+                </div>
+
+                <div class="addess">
+                    <p>Hello <br> <span class="bi bi-geo-alt-fill"></span>Select Your Address</p>
+                </div>
+
+                <div class="input-group" id="header_input">
+                    <select class="input-group-text" style="width: 80px;">
+                        <option>All</option>
+                        <option>Shoes</option>
+                        <option>Mens Fashion</option>
+                        <option>Womens Fashion</option>
+                        <option>Kids Fashiuon</option>
+                    </select>
+                    <input type="text" placeholder=" Search Amazon .in" class="form-control" size="80"> 
+                    <button class="btn btn-warning">
+                        <span class="bi bi-search"></span>
+                    </button>
+                </div>
+
+                <div class="flag">
+                    <details>
+                        <summary style="color: white;"><span class="bi bi-flag"></span>&nbsp; EN</summary>
+                    </details>
+                </div>
+                <div class="account">
+                    <details>
+                   <summary>Hello , Sign In <br><span>Account & Lists</span></summary>
+                   <option style="background-color: gray;">Login</option>
+                   <option>Sign in</option>
+                   <option>Register</option>
+                   <option>Register User</option>
+                   <option>Sign Out</option>
+                </details>
+                </div>
+
+                <div class="orders">
+                    <p style="color: white;">Returns <br> <span style="font-weight: bold;">& Orders</span></p>
+                </div>
+
+                <div class="cart">
+                    <img src="./amazon_photo/cart.png" width="100%" height="58px">
+                </div>
+       </header>
+       <section  class="section_1">
+                <div class="section_1_div_1">
+                    <div style="text-align: center;padding: 5px;"><p style="color: white; margin-top: 4px;"> <span class="bi bi-youtube"></span> ALL</p></div>      
+                    <div style="text-align: center;padding: 5px;"><p style="color: white;margin-top: 4px;">Amazon miniTV</p></div>             
+                    <div style="text-align: center;padding: 5px;"><p style="color: white; margin-top: 4px;">Sell</p></div>
+                    <div style="text-align: center;padding: 5px;"><p style="color: white; margin-top: 4px;">Best Sellers</p></div>
+                    <div style="text-align: center;padding: 5px;"><p style="color: white; margin-top: 4px;">Mobiles</p></div>
+                    <div style="text-align: center;padding: 5px;"><p style="color: white; margin-top: 4px;">Today's Delas</p></div>
+                    <div style="text-align: center;padding: 5px;"><p style="color: white; margin-top: 4px;">Custopmers Service</p></div>
+                    <div style="text-align: center;padding: 5px;"><p style="color: white; margin-top: 4px;">Electronics</p></div>
+                    <div style="text-align: center;padding: 5px;"><p style="color: white; margin-top: 4px;">Prime</p></div>
+                    <div style="text-align: center;padding: 5px;"><p style="color: white; margin-top: 4px;">New Releases</p></div>
+                    <div style="text-align: center;padding: 5px;"><p style="color: white; margin-top: 4px;">Amazon Pay</p></div>
+                    <div style="text-align: center;padding: 5px;"><p style="color: white; margin-top: 4px;">Home & Kitchen</p></div>
+                </div>
+
+                <div class="section_1_div_2">
+                        <p style="color: white;margin-top: 9px;">New Launches from Mobile, Electronics & more</p>
+                </div>
+                
+       </section>
+     
+      <div class="carousel slide" data-bs-ride="carousel" id="banner">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000" >
+                    <img src="./amazon_photo/1.jpg" width="100%"  height="500px">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="./amazon_photo/2.jpg" width="100%" height="500px">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="./amazon_photo/3.jpg" width="100%" height="500px">
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button data-bs-slide-to="0" data-bs-target="#banner" class="active"></button>
+
+                <button data-bs-slide-to="1" data-bs-target="#banner" ></button>
+
+                <button data-bs-slide-to="2" data-bs-target="#banner" ></button>
+            </div>
+
+            <button class="carousel-control-prev btn btn-outline-dark" data-bs-slide="prev" data-bs-target="#banner">
+                    <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next  btn btn-outline-dark" data-bs-slide="next" data-bs-target="#banner">
+                    <span class="carousel-control-next-icon"></span>
+            </button>
+      </div>
+      <section class="section_2">
+
+        <div class="section_2_div_1">
+                <div>
+                        <div>
+                            <p style="font-size: 20px;font-weight: bold;">Up to 50% off | Monitor  blood sugar at home</p>
+                        </div>
+                        <div style="height: 250px;">
+                            <img src="./amazon_photo/pharmacy.jpg" width="100%" height="250px">
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <a href="#">Visit The Store</a>
+                        </div>
+                </div>
+        </div>
+
+        <div class="section_2_div_2">
+                <div>
+                    <div>
+                        <p style="font-size: 20px; font-weight: bold;">Bluetooth Calling Smartwatch starts at..</p>
+                    </div>
+                    <div style="height: 250px;">
+                        <img src="./amazon_photo/watch.jpg" width="100%" height="250px">
+                    </div>
+                    <div style="margin-top: 5px;">
+                        <a href="#">Shop Now</a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="section_2_div_3">
+                <div>
+                    <div>
+                        <p style="font-size: 20px; font-weight: bold;">Up to 70% off | Clearance store</p>
+                    </div>
+                    <div style="height: 280px;">
+                        <img src="./amazon_photo/laptop.jpg" width="100%" height="280px">
+                    </div>
+                    <div style="margin-top: 5px;">
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="section_2_div_4">
+               <div>
+                 <div>
+                    <p style="font-size: 20px; font-weight: bold;">Sign in for your best <br> experience</p>
+                 </div>
+                 <div style="text-align: center; padding: 10px;">
+                    <button class="btn btn-warning text-dark p-1 w-100">Sign In Securly</button>
+                 </div>
+                 <div style="padding: 30px;">
+                    <div style="height: 217px;">
+                            <img src="./amazon_photo/laptop_brand.jpg" width="100%" height="217px">
+                    </div>
+                 </div>
+               </div>
+        </div>
+
+      </section>
+      <div style=" height: 190px;"></div>
+      <section class="section_3">
+            <div class="section_3_div_1">
+                <div>
+                    <div>
+                        <p style="font-size: 20px; font-weight: bold;">Upgrade your home | Amazon Brands & more</p>
+                    </div>
+                    <div class="upgrad">
+                        <div>
+                            <div class="upgrad_div_1">
+                                <img src="./amazon_photo/up_1.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                        </div>
+                        <div>
+                            <div class="upgrad_div_2">
+                                <img src="./amazon_photo/up_2.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                        </div>
+                    </div>
+
+
+                    <div class="upgrad">
+                        <div>
+                            <div class="upgrad_div_1">
+                                <img src="./amazon_photo/up_3.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                        </div>
+                        <div>
+                            <div class="upgrad_div_2">
+                                <img src="./amazon_photo/up_4.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section_3_div_2">
+                <div>
+                    <div>
+                        <p style="font-size: 20px; font-weight: bold;">Automotive essentials | Up to 60% off</p>
+                    </div>
+                    <div class="upgrad">
+                        <div>
+                            <div class="upgrad_div_1">
+                                <img src="./amazon_photo/au_1.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                        </div>
+                        <div>
+                            <div class="upgrad_div_2">
+                                <img src="./amazon_photo/au_2.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                        </div>
+                    </div>
+
+
+                    <div class="upgrad">
+                        <div>
+                            <div class="upgrad_div_1">
+                                <img src="./amazon_photo/au_3.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                        </div>
+                        <div>
+                            <div class="upgrad_div_2">
+                                <img src="./amazon_photo/au_4.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section_3_div_3">
+                <div>
+                    <div>
+                        <p style="font-size: 20px; font-weight: bold;">Up to 60% off | Professional tools, testing & more</p>
+                    </div>
+                    <div class="upgrad">
+                        <div>
+                            <div class="upgrad_div_1">
+                                <img src="./amazon_photo/t1.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                        </div>
+                        <div>
+                            <div class="upgrad_div_2">
+                                <img src="./amazon_photo/t2.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                        </div>
+                    </div>
+
+
+                    <div class="upgrad">
+                        <div>
+                            <div class="upgrad_div_1">
+                                <img src="./amazon_photo/t3.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                        </div>
+                        <div>
+                            <div class="upgrad_div_2">
+                                <img src="./amazon_photo/t4.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section_3_div_4">
+                <div>
+                    <div>
+                        <p style="font-size: 20px; font-weight: bold;">Book travel tickets and get exciting offers</p>
+                    </div>
+                    <div class="upgrad">
+                        <div>
+                            <div class="upgrad_div_1">
+                                <img src="./amazon_photo/b1.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                        </div>
+                        <div>
+                            <div class="upgrad_div_2">
+                                <img src="./amazon_photo/b2.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                        </div>
+                    </div>
+
+
+                    <div class="upgrad">
+                        <div>
+                            <div class="upgrad_div_1">
+                                <img src="./amazon_photo/b3.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                        </div>
+                        <div>
+                            <div class="upgrad_div_2">
+                                <img src="./amazon_photo/b4.jpg" width="100%" height="80px">
+                            </div>
+                            <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+      </section>
+
+      <section class="section_4">
+        <div class="section_4_div_1">
+            <div>
+                <div>
+                    <p style="font-size: 20px; font-weight: bold;">Up to 40% off | Baby care</p>
+                </div>
+                <div class="upgrad">
+                    <div>
+                        <div class="upgrad_div_1">
+                            <img src="./amazon_photo/baby_1.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                    </div>
+                    <div>
+                        <div class="upgrad_div_2">
+                            <img src="./amazon_photo/baby_2.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                    </div>
+                </div>
+
+
+                <div class="upgrad">
+                    <div>
+                        <div class="upgrad_div_1">
+                            <img src="./amazon_photo/baby_3.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                    </div>
+                    <div>
+                        <div class="upgrad_div_2">
+                            <img src="./amazon_photo/baby_4.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section_4_div_2">
+            <div>
+                <div>
+                    <p style="font-size: 20px; font-weight: bold;">Up to 40% off | Daily essentials</p>
+                </div>
+                <div class="upgrad">
+                    <div>
+                        <div class="upgrad_div_1">
+                            <img src="./amazon_photo/daily_1.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                    </div>
+                    <div>
+                        <div class="upgrad_div_2">
+                            <img src="./amazon_photo/daily_2.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                    </div>
+                </div>
+
+
+                <div class="upgrad">
+                    <div>
+                        <div class="upgrad_div_1">
+                            <img src="./amazon_photo/daily_3.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                    </div>
+                    <div>
+                        <div class="upgrad_div_2">
+                            <img src="./amazon_photo/daily_4.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section_4_div_3">
+            <div>
+                <div>
+                    <p style="font-size: 20px; font-weight: bold;">Birthday store</p>
+                </div>
+                <div class="upgrad">
+                    <div>
+                        <div class="upgrad_div_1">
+                            <img src="./amazon_photo/birth1.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                    </div>
+                    <div>
+                        <div class="upgrad_div_2">
+                            <img src="./amazon_photo/birth2.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                    </div>
+                </div>
+
+
+                <div class="upgrad">
+                    <div>
+                        <div class="upgrad_div_1">
+                            <img src="./amazon_photo/birth3.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                    </div>
+                    <div>
+                        <div class="upgrad_div_2">
+                            <img src="./amazon_photo/birth4.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section_4_div_4">
+            <div>
+                <div>
+                    <p style="font-size: 20px; font-weight: bold;">Up to 40% off | Daily essentials</p>
+                </div>
+                <div class="upgrad">
+                    <div>
+                        <div class="upgrad_div_1">
+                            <img src="./amazon_photo/d1.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                    </div>
+                    <div>
+                        <div class="upgrad_div_2">
+                            <img src="./amazon_photo/d2.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                    </div>
+                </div>
+
+
+                <div class="upgrad">
+                    <div>
+                        <div class="upgrad_div_1">
+                            <img src="./amazon_photo/d3.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 50% off | Home appliances</p>
+                    </div>
+                    <div>
+                        <div class="upgrad_div_2">
+                            <img src="./amazon_photo/d4.jpg" width="100%" height="80px">
+                        </div>
+                        <p style="font-size: 15px;">Up to 55% off | Bedsheets & more</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+  </section>
+
+  <section class="section_5">
+    <div style="height: 250;width: 70%; background-color: blue;">
+        <img src="./amazon_photo/homr furnishing.png" width="100%" height="250px">
+    </div>
+  </section>
+
+  <section class="section_6">
+        <div class="section_6_div_2">
+           <div style="margin-top: 20px; text-align: center;">
+                <p>See personalized recommendations</p>
+              <button class="btn btn-warning w-75">
+                     Sign In
+              </button>
+                <p>New customer? <a href="#">Start here.</a></p>
+           </div>
+        </div>
+  </section>
+
+  <section class="section_7">
+        <div class="section_7_div_1">
+            <p style="color: white; font-weight: bold; margin-top: 5px;"><a id="back_to_top" style="text-decoration: none;"href="#">Back To Top</a></p>
+        </div>
+  </section>
+
+  <section class="section_8">
+     <div class="section_8_div">
+         <div class="section_8_div_1">
+                <div class="title">Get to Know Us</div>
+                <div>About Us</div>
+                <div>Careers</div>
+                <div>Predd Releases</div>
+                <div>Amazon Science</div>
+         </div>
+
+         <div class="section_8_div_2">
+            <div  class="title"> Connect with Us</div>
+            <div>Facebook</div>  
+            <div>Twitter</div>  
+            <div>Instagram</div>  
+         </div>
+
+         <div class="section_8_div_3">
+            <div class="title"> Make Money with Us</div>
+            <div>Sell on Amazon</div>
+            <div>Sell under Amazon Accelerator</div>
+            <div>Protect and Build Your Brand</div>
+            <div>Amazon Global Selling</div>
+            <div>Become an Affiliate</div>
+            <div>Fulfilment by Amazon</div>
+            <div>Advertise Your Products</div>
+            <div>Amazon Pay on Merchants</div>
+         </div>
+
+         <div class="section_8_div_4">
+            <div class="title">Let Us Help You</div>
+            <div>COVID-19 and Amazon</div>
+            <div>Your Account</div>
+            <div>Return Center</div>
+            <div>100% Purchase Protection</div>
+            <div>Amazon App Download</div>
+            <div>Help</div>
+           
+         </div>
+     </div>
+  </section> 
+
+  <section class="section_9">
+     <div class="section_9_div">
+            <div  class="section_9_div_1">
+                    <div style="width: 30%; height: 40px;">
+                        <img src="./amazon_photo/amazon_small_logo.PNG" width="100%" height="40px" >
+                    </div>
+            </div>
+
+            <div  class="section_9_div_2">
+                    <div style=" color:aliceblue; font-size: 13px;">Australia</div>
+                    <div style=" color:aliceblue; font-size: 13px;">Brazil</div>
+                    <div style=" color:aliceblue; font-size: 13px;">Canada</div>
+                    <div style=" color:aliceblue; font-size: 13px;">China</div>
+                    <div style=" color:aliceblue; font-size: 13px;">France</div>
+                    <div style=" color:aliceblue; font-size: 13px;">China</div>
+                    <div style=" color:aliceblue; font-size: 13px;">Germany</div>
+                    <div style=" color:aliceblue; font-size: 13px;">Franve</div>
+                    <div style=" color:aliceblue; font-size: 13px;">Italy</div>
+                    <div style=" color:aliceblue; font-size: 13px;">Japan</div>
+                    <div style=" color:aliceblue; font-size: 13px;">Mexico</div>
+                    <div style=" color:aliceblue; font-size: 13px;">Netherland</div>
+                    <div style=" color:aliceblue; font-size: 13px;">Poland</div>
+                    <div style=" color:aliceblue; font-size: 13px;">Singapore</div>
+                    <div style=" color:aliceblue; font-size: 13px;">Spain</div>
+                    <div style=" color:aliceblue; font-size: 13px;">America</div>
+            </div>
+     </div>
+  </section>
+
+  <footer>
+     <div class="footer_div">
+       
+        <div class="footer_div_1">
+               <div style="text-align: center; margin-top: 10px;">
+                    <span style="color:aliceblue">AbeBooks</span><br>
+                    <span style="color: rgb(155, 155, 155); font-size: 13px;">
+                     Books, art <br>
+                    & collectibles
+                    </span>
+               </div>
+               <div style="text-align: center; margin-top: 20px;">
+                    <span style="color:aliceblue">Shopbop</span><br>
+                    <span style="color: rgb(155, 155, 155); font-size: 13px;">
+                        Designer <br>
+                        Fashion Brands
+                    </span>
+               </div>
+        </div>
+
+        <div class="footer_div_2">
+               <div style="text-align: center; margin-top: 10px;">
+                        <span style="color:aliceblue">Amazon Web Services</span><br>
+                    <span style="color: rgb(155, 155, 155); font-size: 13px;">
+                        Scalable Cloud <br>
+                        Computing Services
+                    </span>
+               </div>
+               <div style="text-align: center; margin-top: 20px;">
+                    <span style="color:aliceblue">Amazon Business</span> <br>
+                    <span style="color: rgb(155, 155, 155); font-size: 13px;">
+                        Everything For <br>
+                        Your Business
+                    </span>
+               </div>
+        </div>
+
+        <div class="footer_div_3">
+                <div style="text-align: center; margin-top: 10px;">
+                    <span style="color:aliceblue"> Audible</span> <br>
+                    <span style="color: rgb(155, 155, 155); font-size: 13px;">
+                        Download <br>
+                        Audio Books
+                    </span>
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    <span style="color:aliceblue">Prime Now</span> <br>
+                    <span style="color: rgb(155, 155, 155); font-size: 13px;">
+                        2-Hour Delivery <br>
+                        on Everyday Items
+                    </span>
+                </div>
+        </div>
+
+        <div class="footer_div_4">
+               <div style="text-align: center; margin-top: 10px;">
+                    <span style="color:aliceblue">DPReview</span> <br>
+                    <span style="color: rgb(155, 155, 155); font-size: 13px;">
+                        Digital <br>
+                        Photography
+                    </span>
+               </div>
+               <div style="text-align: center; margin-top: 20px;">
+                    <span style="color:aliceblue">Amazon Prime Music</span> <br>
+                    <span style="color: rgb(155, 155, 155); font-size: 13px;">
+                        90 million songs, ad-free <br>
+                        Over 15 million podcast episodes
+                    </span>
+               </div>
+        </div>
+
+        <div class="footer_div_5">
+                <div style="text-align: center; margin-top: 10px;">
+                    <span style="color:aliceblue">IMDb</span> <br>
+                    <span style="color: rgb(155, 155, 155); font-size: 13px;">
+                        Movies, TV <br>
+                        & Celebrities
+                    </span>
+                </div>
+        </div>
+
+        
+     </div>
+  </footer>
+
+  <section class="footer_last">
+        <div class="footer_last_sub">
+            <p style=" font-size: 13px; color:aliceblue">Conditions of Use & Sale&nbsp; &nbsp;Privacy Notice&nbsp; &nbsp;Interest-Based Ads<br>
+                © 1996-2023, Amazon.com, Inc. or its affiliates</p>
+        </div>
+  </section>
+
+       <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+       <script src="../node_modules/jquery/dist/jquery.js"></script>
+
+</body>
+</html>
