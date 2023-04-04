@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0nline Shopping Site in India</title>
+    <title>0nline Shopping</title>
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 <style>
    header{
-    display: grid;
-    grid-template-columns: 1fr 1fr 6fr 1fr 1fr 1fr 1fr ;
+    display: flex;
+   justify-content: space-evenly;
     background-color: black;
     height: 80px;
     position: sticky;
     top: 0PX;
+    width: 100%;
    }
    .logo{
     height: 75px;
@@ -42,29 +43,18 @@
    }
    #header_input{
     height: 60px;
-    width:103% ;
+    width:70% ;
     margin-top: 5px;
-    margin-right: 25px;
+    margin-right: 5px;
    flex-wrap: nowrap;
    }
-   .flag{
-   
-    margin-top: 5px;
-    width:90px;
-    height: 60px;
-    text-align: center;
-    margin-left:30px;
-    margin-right: 5px;
-   }
-   .flag:hover{
-    border: 1px solid white;
-   }
+  
    .account{
      width: 145px;
      height: 60px;
      color: white;
      margin-top: 5px;
-     margin-left: 20px;
+     margin-left: 8px;
      text-align: center;
      margin-right: 3px;
      background-color: black;
@@ -73,18 +63,6 @@
     border: 1px solid white;
   
 
-   }
-   .orders{
-     width: 90px;
-     height: 60px;
-     margin-top: 5px;
-     margin-left: 16px;
-     text-align: center;
-     background-color: black;
-   
-   }
-   .orders:hover{
-    border: 1px solid white;
    }
    .cart{
      width: 90px;
@@ -413,7 +391,7 @@
                 </div>
 
                 <div class="addess">
-                    <p>Hello <br> <span class="bi bi-geo-alt-fill"></span>Select Your Address</p>
+                    <p>Hello<br><span class="bi bi-geo-alt-fill"></span>choose Address</p>
                 </div>
 
                 <div class="input-group" id="header_input">
@@ -430,11 +408,6 @@
                     </button>
                 </div>
 
-                <div class="flag">
-                    <details>
-                        <summary style="color: white;"><span class="bi bi-flag"></span>&nbsp; EN</summary>
-                    </details>
-                </div>
                 <div class="account">
                     <details>
                    <summary>Hello , Sign In <br><span>Account & Lists</span></summary>
@@ -446,9 +419,6 @@
                 </details>
                 </div>
 
-                <div class="orders">
-                    <p style="color: white;">Returns <br> <span style="font-weight: bold;">& Orders</span></p>
-                </div>
 
                 <div class="cart">
                     <img src="./amazon_photo/cart.png" width="100%" height="58px">
